@@ -5,7 +5,7 @@ const { flipped = false, label, content, image, imageClass } = Astro.props;
 <div class=`flex flex-col-reverse ${flipped ? ' md:flex-row-reverse' : ' md:flex-row'} w-full gap-8 md:gap-16 lg:p-10 items-center`>
 
     <div class="flex flex-col flex-1 gap-2 text-center md:text-start">
-        <h2 class="text-3xl font-lexend font-bold text-gradient-to-b to-secondary/60">{label}</h2>
+        <h2 class="text-3xl font-lexend font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-secondary/50 to-secondary/60">{label}</h2>
         <p class="text-base text-secondary/40">{content}</p>
     </div>
 
